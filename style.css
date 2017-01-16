@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Circular';
-    src: url("fonts/Circular/CircularStd-Book-505dfdcf.eot");
-    src: local("☺"), url("fonts/Circular/CircularStd-Book-da612426.woff") format("woff"), url("fonts/Circular/CircularStd-Book-5e42bb50.ttf") format("truetype"), url("fonts/Circular/CircularStd-Book-6acc11d8.svg") format("svg");
+    src: url("fonts/CircularStd-Book-505dfdcf.eot");
+    src: local("☺"), url("fonts/CircularStd-Book-da612426.woff") format("woff"), url("fonts/CircularStd-Book-5e42bb50.ttf") format("truetype"), url("fonts/CircularStd-Book-6acc11d8.svg") format("svg");
     font-weight: normal;
     font-style: normal
 }
