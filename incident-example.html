@@ -1,0 +1,74 @@
+<!doctype html>
+<html ng-app="status">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Incident Example</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" >
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a class="logo" href="index.html"><img src="img/litmus-status-logo.svg"></a>
+			<a class="button-primary fade" href="#">Subscribe</a>
+		</div>
+	</header>
+
+<div class="container">
+		<div class="row">
+
+      	<div class="col-lg-offset-2 col-lg-8">
+          <a class="back" href="30-day-archive.html">< Back to Archive</a>
+          <div class="status-feed">
+
+              <h2>Litmus Application</h2>
+              <p class="status-update no-mrg">
+                <span class="date">Jan 16, 12:12-17:50 EST</span>
+                Litmus App Was Inaccessible
+              </p>
+
+              <div class="subscribe">
+                <form class="form-wrapper">
+                  <input placeholder="Subscribe to future incident notifications" type="email" name="email">
+                  <input class="fade" type="submit" value="Subscribe">
+                </form>
+              </div>
+
+              <div class="update mrg-bttm--15">
+                <span class="avatar mathew"></span><h3>Matthew Brindley, CTO</h3>
+                <p>
+                  The Litmus application is now accessible again. We apologize for any inconvenience this might have caused.
+                </p>
+                <span class="date">Jan 16, 17:51 EST</span>
+              </div>
+
+              <div class="update mrg-bttm--15">
+                <span class="avatar mathew"></span><h3>Matthew Brindley, CTO</h3>
+                <p>
+                  We are currently working to resolve an issue that is preventing users from accessing the Litmus application.
+                </p>
+                <span class="date">Jan 16, 12:15 EST</span>
+              </div>
+
+          </div>
+  			</div>
+
+	</div><!--// row ends-->
+</div><!--// container ends-->
+
+
+
+
+
+
+	<script src="library/jquery-1.11.1.js"></script>
+ 	<script src="library/angular.min.js"></script>
+  <script src="library/angular-route.min.js"></script>
+  <script src="app.js"></script>
+	<script src="controller/displaynav.js"></script>
+</body>
+</html>

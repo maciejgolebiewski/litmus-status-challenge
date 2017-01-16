@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="status">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Litmus Status Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" >
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a class="logo" href="index.html"><img src="img/litmus-status-logo.svg"></a>
+			<a class="button-primary fade" href="#">Subscribe</a>
+		</div>
+	</header>
+
+<div class="container">
+		<div class="row">
+
+    	<div class="col-lg-4 col-md-4 col-sm-4">
+				<h1>System Status</h1>
+					<nav ng-controller="displayNav">
+				        <a ng-class="menuClass('litmus-application')" class="has-count maintenance" href="#/litmus-application"><i class="icon ion-checkmark"></i>Litmus Application<span class="count">1</span></a>
+				        <a ng-class="menuClass('email-previews')" href="#/email-previews"><i class="icon ion-checkmark"></i>Email Previews</a>
+				        <a ng-class="menuClass('web-page-previews')" href="#/web-page-previews"><i class="icon ion-checkmark"></i>Web Page Previews</a>
+								<a ng-class="menuClass('spam-filters')" class="has-count issue" href="#/spam-filters"><i class="icon ion-close"></i>Spam Filters<span class="count">2</span></a>
+				        <a ng-class="menuClass('email-analytics')" href="#/email-analytics"><i class="icon ion-checkmark"></i>Email Analytics</a>
+				        <a ng-class="menuClass('reseller-api')" href="#/reseller-api"><i class="icon ion-checkmark"></i>Reseller API</a>
+								<a ng-class="menuClass('labs')" href="#/labs"><i class="icon ion-checkmark"></i>Labs</a>
+					</nav>
+					<p>
+						This status page is updated every five minutes.
+					</p>
+					<a class="archive" href="30-day-archive.html">View Past 30 Days</a>
+			</div>
+
+			<div class="col-lg-8 col-md-8 col-sm-8">
+					<div id="viewWindow" ng-view=""></div>
+			</div>
+
+	</div><!--// row ends-->
+</div><!--// container ends-->
+
+
+
+
+
+
+
+
+
+	<script src="library/jquery-1.11.1.js"></script>
+ 	<script src="library/angular.min.js"></script>
+  <script src="library/angular-route.min.js"></script>
+  <script src="app.js"></script>
+	<script src="controller/displaynav.js"></script>
+</body>
+</html>
